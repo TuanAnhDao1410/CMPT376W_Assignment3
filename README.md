@@ -9,7 +9,7 @@ or choose one log level, such as `ERROR`. The file stays on your computer, your 
 - A CSV file containing three column names: 'timestamp', 'level', and 'message'.
 
 For first run, use command [command].
-If you need to download the project, follow. the install guide in (docs/INSTALL.md).
+If you need to download the project, follow the install guide in (docs/INSTALL.md).
 
 ## Get started
 
