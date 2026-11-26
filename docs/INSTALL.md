@@ -4,7 +4,7 @@ Follow these steps to set up LogLens and run it with the sample CSV file. LogLen
 
 ## Things you need
 
-* Python 3.8 or newer, plus pip.
+* Python 3.10 or newer, you do not need to install any extra Python packages.
 * A network connection so LogLens can upload your files for checking.
 * A file containing logs from your computer or a work system.
 
@@ -32,4 +32,4 @@ For your own files, type `python loglens.py --file /Users/alex/Desktop/system-lo
 
 ## Problems and fixes
 
-If you see a "file not found" error, reinstall Python and try again. If the software complains about the CSV, there might be something wrong with your system. If you still need help, open a GitHub issue. Include the command you ran and the error message you saw. Remove sensitive details before posting. If you need to show an example, use only relative rows with made up data.
+If you see a "file not found" error, reinstall Python and try again. If the software cannot find your CSV file, check its name and the path after `--file`. If you still need help, open a GitHub issue. Include the command you ran and the error message you saw. Remove sensitive details before posting. If you need to show an example, use only relative rows with made up data.
