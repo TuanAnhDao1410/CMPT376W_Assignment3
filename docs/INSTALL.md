@@ -32,4 +32,4 @@ For your own files, type `python loglens.py --file /Users/alex/Desktop/system-lo
 
 ## Problems and fixes
 
-If you see a "file not found" error, reinstall Python and try again. If the software complains about the CSV, there might be something wrong with your system. If you still need help, open a GitHub issue. Include the command you ran and the error message you saw. Remove sensitive details before posting. If you need to show an example, use only relative rows with made-up data.
+If you see a "file not found" error, reinstall Python and try again. If the software complains about the CSV, there might be something wrong with your system. If you still need help, open a GitHub issue. Include the command you ran and the error message you saw. Remove sensitive details before posting. If you need to show an example, use only relative rows with made up data.
