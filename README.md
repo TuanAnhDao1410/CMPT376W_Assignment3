@@ -1,27 +1,37 @@
-# LogLens - find all your log problems fast
+# LogLens
 
-LogLens is a really simple program that tells you what's happening in your logs. It is useful for developers, IT staff, customers, and anybody who has a computer. You don't really need to know anything about log files to get started. It finds problems in your files, so you can use it to make decisions about your system. Your data is always 100% secure.
+LogLens tells you what's happening in your logs. LogLens reads a CSV log file and counts its records. You can count all records
+or choose one log level, such as `ERROR`. The file stays on your computer, your data is always 100% secure.
 
-## Requirements and things
+## Requirement
 
-You need Python. Most computers already have it, and version 3.6 or later should be good enough. It works on Windows, Mac, and Linux. Other than that, there is not much to know.
+- Python 3.8 or newer.
+- A CSV file containing three column names: 'date', 'severity', and details'.
+
+For first run, use command [command].
+If you need to download the project, follow. the install guide in (docs/INSTALL.md).
 
 ## Get started
 
-First, get the project files from GitHub. Then install the program using `pip install log-lens` and run it by typing `loglens`. If you can't make it work, see docs/INSTALL.md. You probably won't need those instructions.
+1. On the project's GitHub page, click **Code**, then **Download ZIP**.
+2. Extract the ZIP file.
+3. Open a terminal in the folder that contains `loglens.py`.
+
+If you need to download the project, follow. the install guide in (docs/INSTALL.md).
 
 ## Using the program
 
-Run the following command after you have found the correct folder:
+In the terminal you opened during setup, run the following command:
 
 `loglens --input mylog.csv --severity error`
 
 The software scans your log, fixes mistakes, and shows you what went wrong. You will see a number once it is finished. You can also run it on real production files without worrying about any side effects.
 
-## Input format
-
-The input should be a CSV file. Log files tend to have fields describing the time and what happened, but LogLens is flexible and will work with whatever columns your monitoring system uses. A small example is included somewhere in this repository.
-
 ## Questions
 
-If something doesn't work, just contact the developers or create an issue. Make sure you describe the problem so somebody can help. This is a basic tool, so the instructions should be pretty obvious.
+If a command fails, check the (docs/INSTALL.md). If you still need help, open a GitHub issue and include:
+
+- The command you ran.
+- The error message you saw.
+
+Remember to remove private details before posting. If you need to share an example, only send the relevant rows.
