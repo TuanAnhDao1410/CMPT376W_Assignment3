@@ -1,6 +1,6 @@
 # How to install LogLens and use it
 
-These instructions are for everyone. They should work the same way on every machine, so read through them and do what they say.
+Follow these steps to set up LogLens and run it with the sample CSV file. LogLens reads the file on your computer and leaves it unchanged.
 
 ## Things you need
 
@@ -10,7 +10,10 @@ These instructions are for everyone. They should work the same way on every mach
 
 ## Getting the program
 
-Get LogLens from the GitHub website. Look for the green button and download a ZIP. Then extract it. Make sure you are in the right place in the terminal, because you will need that later. Once everything is done, you can install it.
+1. Open the project's main page on GitHub.
+2. Click **Code**, then **Download ZIP**.
+3. Extract the ZIP file.
+4. Find the folder that contains `loglens.py`. Open a terminal in that folder.
 
 Run this command:
 
@@ -18,14 +21,15 @@ pip install loglens
 
 Then move on to the next step.
 
+
 ## Running a check
 
-First, take a CSV file from your logging system and put it in the project directory. It needs the columns `date`, `severity`, and `details` or the tool might fail. Running it is easy:
+Start with the sample file. From the folder that contains `loglens.py`, run:
 
 python loglens.py data/sample_logs.csv
 
-For your own files, type `python loglens.py --file /Users/alex/Desktop/system-log.csv --level error`. This will print results when the analysis is over. You can find the example data in the project somewhere.
+For your own files, type `python loglens.py --file /Users/alex/Desktop/system-log.csv --level error`. This will print results when the analysis is over. You can find the example data in data/sample_logs.csv in the project's 'data' folder
 
 ## Problems and fixes
 
-If you see a "file not found" error, reinstall Python and try again. If the software complains about the CSV, there might be something wrong with your system. If none of this works, open a public GitHub issue and attach your entire original CSV so the team can investigate. Please do not waste the maintainers' time with problems caused by skipped steps.
+If you see a "file not found" error, reinstall Python and try again. If the software complains about the CSV, there might be something wrong with your system. If you still need help, open a GitHub issue. Include the command you ran and the error message you saw. Remove sensitive details before posting. If you need to show an example, use only relative rows with made-up data.
