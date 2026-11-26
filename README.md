@@ -5,8 +5,8 @@ or choose one log level, such as `ERROR`. The file stays on your computer, your 
 
 ## Requirement
 
-- Python 3.8 or newer.
-- A CSV file containing three column names: 'date', 'severity', and details'.
+- Python 3.10 or newer.
+- A CSV file containing three column names: 'timestamp', 'level', and 'message'.
 
 For first run, use command [command].
 If you need to download the project, follow. the install guide in (docs/INSTALL.md).
@@ -17,19 +17,27 @@ If you need to download the project, follow. the install guide in (docs/INSTALL.
 2. Extract the ZIP file.
 3. Open a terminal in the folder that contains `loglens.py`.
 
-If you need to download the project, follow. the install guide in (docs/INSTALL.md).
+If you need to download the project, follow the install guide in [installation guide](docs/INSTALL.md).
 
 ## Using the program
 
-In the terminal you opened during setup, run the following command:
+In the terminal you opened during setup, run the following command with the [sample CSV file](data/sample_logs.csv):
 
-`loglens --input mylog.csv --severity error`
+```sh
+python loglens.py --file data/sample_logs.csv --level ERROR
+```
+
+Expected output:
+
+```text
+Records matching ERROR: 2
+```
 
 The software scans your log, fixes mistakes, and shows you what went wrong. You will see a number once it is finished. You can also run it on real production files without worrying about any side effects.
 
 ## Questions
 
-If a command fails, check the (docs/INSTALL.md). If you still need help, open a GitHub issue and include:
+If a command fails, check the [installation guide](docs/INSTALL.md). If you still need help, open a GitHub issue and include:
 
 - The command you ran.
 - The error message you saw.
